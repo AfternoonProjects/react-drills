@@ -8,6 +8,8 @@ class UserLogin extends Component {
             username: "",
             password: ""
         }
+
+        this.handleLogin = this.handleLogin.bind(this);
     };
 
     handleChangeUsername( name ) {
@@ -20,6 +22,7 @@ class UserLogin extends Component {
 
     handleLogin() {
         alert( `Username: ${ this.setState.username } Password: ${ this.state.password }` )
+        // alert(`username: ${ this.state.username } password: ${ this.state.password }`);
     };
 
     render() {
